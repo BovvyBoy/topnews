@@ -1,0 +1,10 @@
+require 'pry'
+require 'nokogiri'
+require 'colorize'
+require 'require_all'
+require 'tty'
+require 'tty-font'
+require 'word_wrap/core_ext'
+require 'word_wrap'
+
+require_all 'lib'
