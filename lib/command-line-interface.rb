@@ -1,9 +1,8 @@
-require_relative 'environment.rb'
-
 class CommandLineInterface
   @@base_path = ""
 
   def run
+    binding.pry
     system('clear')
     welcome
     input
@@ -32,6 +31,7 @@ class CommandLineInterface
       end
     end
   end
+
 
   def list_channels
     prompt = TTY::Prompt.new

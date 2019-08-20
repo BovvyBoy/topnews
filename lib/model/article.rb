@@ -15,6 +15,10 @@ class Article
     @@all
   end
 
+  def self.sort_by_title
+    all.sort{|a,b|a.title <=> b.title}
+  end
+
 
 #----------------------------------------AP----------------------------------------------
   def self.new_from_ap_scrape(articles_array)
